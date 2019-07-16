@@ -15,7 +15,6 @@
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<quarkus.version>0.19.1</quarkus.version>
 		<conductor.version>2.13.3-alpha</conductor.version>
-		<lombok.version>1.18.8</lombok.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 	</properties>
@@ -54,6 +53,12 @@
 				<artifactId>conductor-client</artifactId>
 				<version>${conductor.version}</version>
 			</dependency>
+			
+			<dependency>
+				<groupId>io.rest-assured</groupId>
+				<artifactId>rest-assured</artifactId>
+				<version>3.3.0</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 
@@ -90,11 +95,6 @@
 			<scope>test</scope>
 		</dependency>
 
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-			<scope>compile</scope>
-		</dependency>
 	</dependencies>
 
 	<build>
