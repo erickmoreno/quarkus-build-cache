@@ -1,5 +1,5 @@
 #Build Environment
-FROM quay.io/quarkus/centos-quarkus-maven:19.2.0
+FROM quay.io/quarkus/centos-quarkus-maven:19.2.1
 USER root
 
 ADD ./pom.xml /project/pom.xml
