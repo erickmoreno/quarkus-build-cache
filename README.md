@@ -4,10 +4,6 @@ Image with basic dependencies to build Quarkus and Graalvm images.
 
 ## To publish a new image
 
-**Build:**
+Just run publish script. It creates a tag with current local code, buils a new docker image and publishes its contents on the github registry by default.
 
-$ docker build -t docker.pkg.github.com/erickmoreno/quarkus-build-cache/quarkus-build-cache:${TAG}
-
-**Publish:**
-
-$ docker push docker.pkg.github.com/erickmoreno/quarkus-build-cache/quarkus-build-cache:${TAG}
+$ ./publish.sh {tag version}
