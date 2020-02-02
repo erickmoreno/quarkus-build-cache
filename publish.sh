@@ -22,3 +22,4 @@ docker build -t "$REGISTRY/$USER/$PROJECT/$IMAGE_NAME:$TAG" .
 
 echo "Publishing image..."
 docker push "$REGISTRY/$USER/$PROJECT/$IMAGE_NAME:$TAG"
+#docker push docker.pkg.github.com/erickmoreno/quarkus-build-cache/quarkus-build-cache:0.1.0
