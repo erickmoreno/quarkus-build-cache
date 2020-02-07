@@ -4,13 +4,13 @@ Image with basic dependencies to build Quarkus and Graalvm images.
 
 ## To use this cache image
 
-### Pulling
+#### Pulling
 
 ```bash
 docker pull docker.pkg.github.com/erickmoreno/quarkus-build-cache/quarkus-build-cache:latest
 ```
 
-### Using as build image
+#### Using as build image
 
 ```bash
 FROM docker.pkg.github.com/erickmoreno/quarkus-build-cache/quarkus-build-cache:latest as build
